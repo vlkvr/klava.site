@@ -1,0 +1,176 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'PT Sans', 'Consolas', 'Roboto', sans-serif !important;
+  font-size: 16px;
+  background-color: #222;
+  background-image: url(../img/bg-metall.jpg);
+  background-size: contain;
+}
+
+h1 {
+  margin: 20px;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+sup {
+  margin-left: 5px;
+}
+
+.container {
+  // min-width: 1200px;
+  // max-width: 1200px;
+  // margin: 0 auto;
+  // padding: 20px;
+}
+
+.hand {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  width: 540px;
+  height: 430px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #222;
+  background-image: url(../img/bg-noise.png);
+  border: 1px solid rgba(255,255,255,.5);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.5), 10px 10px 10px rgba(0,0,0,.4);
+}
+
+.hand-left {
+  flex-direction: row-reverse;
+  float: left;
+  /*transform: rotate(10deg);*/
+}
+
+.hand-right {
+  float: right;
+  /*transform: rotate(-10deg);*/
+}
+
+.logo {
+  position: absolute;
+  color: #fff;
+  bottom: 5px;
+  margin: 0;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.hand-left .logo {
+  left: 5px;
+}
+.hand-right .logo {
+  right: 5px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.hand-left .row {
+  flex-direction: row-reverse;
+}
+
+.key {
+  box-sizing: border-box;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin: 2px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 1px 0px rgba(255,255,255,.3);
+  border-radius: 5px;
+  box-shadow: 1px 2px 0px rgba(255,255,255,.3);
+  transition: all .05s ease-out;
+  opacity: .9;
+  background-color: #000 !important;
+}
+
+.key:hover {
+  opacity: 1;
+}
+
+.key [class^="pos"] {
+  position: absolute;
+  margin: 5px;
+}
+
+/* Позиции букв на клавише */
+.pos-tr {
+  right: 0px;
+}
+
+.pos-bl {
+  bottom: 0px;
+  text-transform: none;
+  font-size: smaller;
+  color: #999;
+}
+
+.pos-br {
+  bottom: 0;
+  right: 0;
+  text-transform: none;
+  font-size: small;
+  color: #fc0;
+}
+
+/* Модификация размеров клавиш */
+.key-w-xl {
+  width: 144px;
+}
+
+.key-h-xl {
+  height: 107px;
+}
+
+
+/* Окрашивание клавиш */
+.key-ii {
+  background-color: #2196f3;
+}
+.key-i {
+  background-color: #03a9f4;
+  //transform: translateY(-10px);
+}
+.key-m {
+  background-color: #4CAF50;
+  //transform: translateY(-20px);
+}
+.key-r {
+  background-color: #FFC107;
+  //transform: translateY(-10px);
+}
+.key-p {
+  background-color: #FF9800;
+  ///*transform: translateY(17px);*/
+}
+.key-pp {
+  background-color: #F44336;
+  ///*transform: translateY(17px);*/
+}
+.key-t {
+  background-color: #607D8B;
+  text-transform: none;
+}
